@@ -1,5 +1,5 @@
 
-const hostBack = "https://backgisel.herokuapp.com/";
+const hostBack = "https://backgisel.herokuapp.com";
 
 
 export default hostBack;
