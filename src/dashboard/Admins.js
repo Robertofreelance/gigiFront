@@ -6,7 +6,6 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
-import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import Loading from "../errors/Loading";
 import Nothing from "../errors/Nothing";
@@ -105,8 +104,8 @@ export default function Admins(props) {
   const actualUser = useContext(AuthContext);
   const classes = useStyles();
 
-  const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const page = 0;
+  const rowsPerPage = 5;
 
   const [open, setOpen] = useState({ open: false, admin: null });
 

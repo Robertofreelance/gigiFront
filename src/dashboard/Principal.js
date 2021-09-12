@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect, useContext } from "react";
+import React, { memo, useState, useContext } from "react";
 import clsx from "clsx";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -34,7 +34,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      CONTROL DE INVENTARIO Y NÓMINA DE LA PANADERÍA Y PASTELERÍA VENEZUELA III
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -194,7 +194,7 @@ function Dashboard(props) {
             noWrap
             className={classes.title}
           >
-            Prueba Gisel
+            CONTROL DE INVENTARIO Y NÓMINA DE LA PANADERÍA Y PASTELERÍA VENEZUELA III
           </Typography>
         </Toolbar>
       </AppBar>

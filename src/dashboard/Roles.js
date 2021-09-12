@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
-import { Button, withStyles, Box } from "@material-ui/core";
+import { Button, Box } from "@material-ui/core";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
@@ -88,10 +88,10 @@ const ROL_DELETE = gql`
 
 export default function Roles(props) {
   const classes = useStyles();
-  const [page, setPage] = useState(0);
+  const page = 0;
 
   const { data, loading, error, refetch } = props;
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const rowsPerPage = 5;
   const [edit, setEdit] = useState({ open: false, rol: null });
 
   let Roles = [];

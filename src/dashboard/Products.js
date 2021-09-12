@@ -114,11 +114,11 @@ const PRODUCT_DELETE = gql`
 
 export default function Products(props) {
   const classes = useStyles();
-  const [page, setPage] = useState(0);
+  const page = 0;
   const { user } = useContext(AuthContext);
 
   const { data, loading, error, refetch } = useQuery(GET_PRODUCTS);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const rowsPerPage = 5;
   const [edit, setEdit] = useState({ open: false, product: null });
   let products = [];
   if (data) {

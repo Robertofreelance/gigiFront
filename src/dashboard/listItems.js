@@ -2,17 +2,11 @@ import React, { useContext, Fragment } from "react";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import RedeemIcon from "@material-ui/icons/Redeem";
-import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
+import ShopIcon from "@material-ui/icons/Shop";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
-import EventAvailableIcon from "@material-ui/icons/EventAvailable";
 import PeopleIcon from "@material-ui/icons/People";
-import LocationCityIcon from "@material-ui/icons/LocationCity";
-import CategoryIcon from "@material-ui/icons/Category";
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import { AuthContext } from "../context/auth";
-import HomeWorkIcon from "@material-ui/icons/HomeWork";
-import AddAlertIcon from "@material-ui/icons/AddAlert";
-
 export function MainListItems(props) {
   const { setScreen } = props;
   const { user } = useContext(AuthContext);
@@ -20,7 +14,7 @@ export function MainListItems(props) {
     <div>
       <ListItem onClick={() => setScreen("Products")} button>
         <ListItemIcon>
-          <AssignmentIndIcon />
+          <ShopIcon />
         </ListItemIcon>
         <ListItemText primary="Productos" />
       </ListItem>
@@ -35,7 +29,7 @@ export function MainListItems(props) {
 
           <ListItem onClick={() => setScreen("Roles")} button>
             <ListItemIcon>
-              <CategoryIcon />
+              <SupervisorAccountIcon />
             </ListItemIcon>
             <ListItemText primary="Roles" />
           </ListItem>

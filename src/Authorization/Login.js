@@ -23,7 +23,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="#">
-        Your Website
+      CONTROL DE INVENTARIO Y NÓMINA DE LA PANADERÍA Y PASTELERÍA VENEZUELA III
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -147,7 +147,7 @@ export default function SignIn(props) {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Iniciar sesión de administrador
+            Iniciar sesión
           </Typography>
           <form className={classes.form} noValidate onSubmit={handleSubmit}>
             <Grid container spacing={2}>
